@@ -1,0 +1,61 @@
+{
+  "name": "janus-ui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "vue-cli-service serve --mode dev",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "fat": "vue-cli-service build --mode fat",
+    "uat": "vue-cli-service build --mode production",
+    "pro": "vue-cli-service build --mode production",
+    "test:unit": "vue-cli-service test:unit",
+    "commitmsg": "validate-commit-msg",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md && git commit -m 'docs: update changelog file'"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "core-js": "^2.6.5",
+    "echarts": "^4.7.0",
+    "element-ui": "^2.13.1",
+    "es6-promise": "^4.2.8",
+    "jquery": "^3.4.1",
+    "jsplumb": "^2.10.1",
+    "moment": "^2.25.3",
+    "v-org-tree": "^1.0.12",
+    "vue": "^2.6.10",
+    "vue-codemirror": "^4.0.6",
+    "vue-router": "^3.1.6",
+    "vuex": "^3.3.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
+    "cz-conventional-changelog": "^3.0.2",
+    "eslint": "^5.16.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-vue": "^5.2.3",
+    "file-loader": "^4.2.0",
+    "husky": "^3.0.5",
+    "less-loader": "^6.1.0",
+    "lodash": "^4.17.15",
+    "mocker-api": "^1.9.0",
+    "mockjs": "^1.0.1-beta3",
+    "sass": "^1.3.0",
+    "sass-loader": "^8.0.0",
+    "url-loader": "^4.1.0",
+    "validate-commit-msg": "^2.14.0",
+    "vue-eslint-parser": "^6.0.4",
+    "vue-property-decorator": "^8.4.2",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

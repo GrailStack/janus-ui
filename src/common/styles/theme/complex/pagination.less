@@ -1,0 +1,33 @@
+// 分页
+.el-pagination.is-background {
+  height: 28px;
+  text-align: right;
+  padding: 0;
+  margin-top: 15px;
+  // 页数按钮盒子
+  .el-pager {
+    // 分页按钮
+    &>li{
+      color: #FFFFFF;
+      background: #1D2431;
+    }
+    // 选中按钮
+    &>li:not(.disabled).active, &>li:not(.disabled):hover{
+      color: #FFFFFF;
+      background-color: #585f77;
+    }
+  }
+  // 左右按钮
+  .btn-prev, .btn-next {
+    border-radius: 3px;
+    padding: 0 10px;
+    color: #FFFFFF;
+    background: #1D2431;
+  }
+  // 页数跳转盒子
+  .el-pagination__jump, .el-input__inner {
+    height: 28px;
+    line-height: 28px;
+    color: #FFFFFF;
+  }
+}

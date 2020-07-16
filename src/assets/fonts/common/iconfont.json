@@ -1,0 +1,23 @@
+{
+  "id": "1441444",
+  "name": "xbiz",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1348253",
+      "name": "展开",
+      "font_class": "zhankai",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "1348258",
+      "name": "收回",
+      "font_class": "shouhui",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    }
+  ]
+}

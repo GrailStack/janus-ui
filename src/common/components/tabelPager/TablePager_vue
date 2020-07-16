@@ -1,0 +1,40 @@
+<template>
+    <el-pagination
+            @size-change="handleSizeChange"
+            @current-change="handleCurrentChange"
+            :current-page="pagerData.page"
+            :page-size="pagerData.size"
+            :page-sizes="pagerData.sizes"
+            :total="pagerData.total"
+            layout="total, prev, pager, next, sizes, jumper"
+            background
+    ></el-pagination>
+</template>
+
+<script>
+    import {defaultPager} from "./TablePagerUtils";
+
+    export default {
+        name: "TabelPager",
+        props: {
+            pagerData: {
+                type: Object,
+                default: createPagerData
+            },
+        },
+        methods: {
+            handleSizeChange(pageSize) {
+                let p = {...this.pagerData, size: pageSize}
+                this.$emit('pageChange', p)
+            },
+            handleCurrentChange(currentPage) {
+                let p = {...this.pagerData, page: currentPage}
+                this.$emit('pageChange', p);
+            },
+        }
+    }
+</script>
+
+<style scoped>
+
+</style>

@@ -1,0 +1,97 @@
+
+// table 滚动条设置
+
+.mixin-scroll() {
+  &::-webkit-scrollbar {position:absolute;width:10px; height:10px; background-color:transparent;}
+  &::-webkit-scrollbar-track{background-color:#292D40; -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);}
+  &::-webkit-scrollbar-thumb {background-color:#4B5061; -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);}
+  &::-webkit-scrollbar-corner {background-color:transparent;}
+}
+
+.el-table__body-wrapper{
+  .mixin-scroll()
+}
+/*.scroll-bar{
+  .mixin-scroll()
+}*/
+// elementUI table  公共样式处理
+.el-table {
+  border-width: 0px;
+  tr > td{
+    border-right-width: 0px;
+  }
+  th {
+    border-right-width: 0px;
+    font-size: 12px;
+    display: table-cell!important;
+  }
+  th.is-leaf {
+    border-bottom-width: 0px;
+  }
+  &:after {
+    width: 0;
+  }
+  &:before {
+    height: 0;
+  }
+}
+
+// table 样式
+.el-table {
+  background: @default-table-background ;
+  color: @default-table-font-color;
+
+  th.is-leaf {
+    background-color: @default-table-th-background;
+    color: @default-table-font-color;
+  }
+
+  tr:hover > td {
+    background: @default-table-th-background ;
+  }
+
+  .el-table__body-wrapper {
+    height: calc(~'100% - 38px');
+    overflow-y: auto;
+  }
+
+  th {
+    padding: 6px 0;
+  }
+
+  tr > td {
+    padding: 7px 0;
+    background: @default-table-background;
+    border-bottom: 1px solid rgba(193, 197, 207, 0.15);
+
+    a {
+      color: @default-table-font-color;
+      text-decoration: underline;
+    }
+
+    div.cell {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+  // bug
+  .expand-table{
+    border-left: none;
+  }
+
+  .el-table__fixed::before, .el-table__fixed-right::before {
+    background: none;
+  }
+
+  //kz
+  .el-table__expanded-cell:hover{
+    background-color: #31374a !important;
+  }
+
+  .el-table__fixed-right-patch{
+    background-color: #4b5061 ;
+    border-bottom: 1px solid #4b5061;
+    top: 0;
+  }
+}

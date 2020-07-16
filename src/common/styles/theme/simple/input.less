@@ -1,0 +1,85 @@
+//
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+.mixin-input() {
+  border-radius: 0px;
+  min-height: 35px;
+  line-height: 35px;
+  background: #2E313E;
+  border-color: #2E313E;
+  color: #C1C5CF;
+  font-size: 10px;
+
+  //
+  &:hover {
+    border-color: #ff6a00;
+  }
+  &:focus {
+    border-color: #ff6a00;
+  }
+  // 全局默认 input select placeholder字体大小、颜色公共样式
+  &::-webkit-input-placeholder {
+    color: #A9A9A9;
+    font-size: 12px;
+  }
+}
+
+//全局默认 input  select公共样式
+.el-input, .el-textarea, .el-select {
+  .el-input__inner {
+    .mixin-input()
+  }
+
+  .el-textarea__inner {
+    .mixin-input()
+  }
+}
+
+// input、select、textarea校验成功之后的边框颜色
+.is-success .el-input__inner, .is-success .el-textarea__inner {
+
+}
+
+// input、select、textarea校验失败的边框颜色
+.is-error .el-input__inner, .is-error .el-textarea__inner {
+  // border: 1px solid #ff4949
+  background: #443939;
+  border: 1px solid #E6595B;
+}
+
+
+/*// input、select、textarea获取焦点时边框颜色
+.el-input__inner:focus, .el-input__inner:hover,
+.el-textarea__inner:focus, .el-textarea__inner:hover,
+.is-success .el-input__inner:focus, .is-success .el-input__inner:hover,
+.is-success .el-textarea__inner:focus, .is-success .el-textarea__inner:hover,
+.is-error .el-input__inner:focus, .is-error .el-textarea__inner:focus
+.is-error:hover .el-input__inner, .is-error:hover .el-textarea__inner,
+.el-range-editor.is-active, .el-input.is-focus > .el-input__inner {
+  background: #2E313E;
+  border: 1px solid #ff6a00;
+}*/
+
+/*
+
+
+
+// input  禁用时的样式设置
+.is-disabled .el-input__inner {
+  height: 35px;
+  line-height: 35px;
+  border: none;
+  cursor: default;
+  color: #7C87A6;
+  background: #4A4E60;
+  border-radius: 2px;
+}
+*/

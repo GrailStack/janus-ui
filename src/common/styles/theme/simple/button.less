@@ -1,0 +1,171 @@
+@main-button-bgcolor: #ff6a00; // 常规按钮颜色
+
+@main-addButton-bordercolor: #fff; // 常规按钮颜色
+
+// 按钮字体大小公共样式
+.el-button {
+  font-size: 12px;
+  border-radius: 2px;
+  background: @main-button-bgcolor;
+  border: @main-button-bgcolor 1px solid;
+  color: #fff;
+  padding: 7px 16px;
+
+  &:hover {
+    background: #e15e00; // 常规按钮hover
+  }
+}
+
+//  reset按钮
+.el-button.resetBtn {
+  background: #373c4f;
+  border: @main-button-bgcolor 1px solid;
+  color: @main-button-bgcolor;
+  padding: 7px 16px;
+
+  &:hover {
+    background: #2f3345;
+  }
+}
+
+.el-button.addBtn {
+  background: #373c4f;
+  border: @main-addButton-bordercolor 1px solid;
+  padding: 7px 16px;
+
+  &:hover {
+    background: #2f3345;
+  }
+}
+
+.el-button.refresh-btn{
+  padding: 7px 9px;
+  border: 1px solid #2E313E;
+  background: #373C4F;
+  color: #fff;
+}
+
+// btn禁用样式
+.el-button.is-disabled, .el-button.is-disabled:hover, .el-button.is-disabled:focus {
+  background: #939393;
+  border: 1px solid #D5D5D5;
+  border-radius: 2px;
+  color: #D5D5D5;
+}
+
+/*.save-btn-form-two {
+  text-align: center;
+  .el-button {
+    width: 120px;
+    display: inline-block;
+    &:nth-child(1) {
+      background-color: transparent;
+      border-color: #ff6a00;
+      color: #ff6a00;
+    }
+    &:nth-child(1):hover {
+      background-color: transparent;
+      border-color: #1D909F;
+      color: #1D909F;
+    }
+    &:nth-child(2) {
+      background-color: #21A1AE;
+      border-color: #21A1AE;
+      color: #fff;
+    }
+    &:nth-child(2):hover {
+      background-color: #17808B;
+      border-color: #17808B;
+    }
+  }
+}
+*/
+/*
+.el-button.search-btn {
+  background: #21A1AE;
+  border: 1px solid #21A1AE;
+  color: #fff;
+}
+
+.el-button.search-btn:hover {
+  background: #17808B;
+  border: 1px solid #17808B;
+  color: #fff;
+}
+
+.el-button.back-btn {
+  padding: 5px 10px 6px 10px;
+  background: #2E313E;
+  border: 1px solid #282B37;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.el-button.back-btn:hover {
+  background: #1B1F2F;
+  border: 1px solid #282B37;
+  color: #fff;
+}
+
+.el-button.delete-btn {
+  background: #FBAEAE;
+  border: 1px solid #FBAEAE;
+  color: #fff;
+  padding: 6px 16px;
+}
+
+.el-button.edit-btn {
+  background:rgba(245,166,35,0.39);
+  border: 1px solid rgba(245,166,35,0.39);
+  color: #fff;
+  padding: 6px 16px;
+}
+
+.el-button.create-btn {
+  background: #0AA194;
+  border: 1px solid #0AA194;
+  color: #fff;
+}
+
+.el-button.create-btn:hover {
+  background: #06766D;
+  border: 1px solid #06766D;
+  color: #fff;
+}
+
+.el-button.reset-btn {
+  background: transparent;
+  border: 1px solid #ff6a00;
+  span {
+    color: #ff6a00;
+  }
+}
+
+.el-button.reset-btn:hover {
+  background: transparent;
+  border: 1px solid #1D909F;
+  span {
+    color: #1D909F;
+  }
+}
+
+// 刷新按钮颜色公共样式
+.refresh-btn.el-button {
+  padding: 7px 9px;
+  border: 1px solid #2E313E;
+  background: #373C4F;
+  color: #fff;
+  .el-icon-refresh {
+    font-size: 14px;
+    vertical-align: middle;
+  }
+  span {
+    vertical-align: middle;
+  }
+}
+.refresh-btn.el-button:hover {
+  border: 1px solid #1B1F2F;
+  background: #1B1F2F;
+}
+
+*/

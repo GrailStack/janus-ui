@@ -1,0 +1,90 @@
+* {
+  word-wrap: break-word;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+body, textarea, input[type='text'], span, i, button, a, p, ul, li, em, h1, h2, div, select, textarea {
+  font-family: "Helvetica Neue", "Helvetica", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Arial", "sans-serif";
+}
+
+#app {
+  height: 100%;
+  font-family: "Helvetica Neue", "Helvetica", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Arial", "sans-serif";
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  a img {
+    border: 0
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  @import 'theme/simple/input.less';
+  @import 'theme/simple/button.less';
+  @import 'theme/simple/check.less';
+  //@import 'theme/simple/select.less';
+
+  @import 'theme/complex/table.less';
+  @import 'theme/complex/pagination.less';
+
+  @import 'theme/simple/form.less';
+
+  @import 'theme/complex/dailog';
+  @import 'theme/complex/transfer';
+
+  .el-loading-mask {
+    background-color: transparent;
+  }
+}
+
+@import 'theme/complex/message';
+@import 'theme/complex/dateRange';
+@import 'theme/simple/select.less';
+
+//tooltip  edit  style
+span.info-icon.el-tooltip {
+  color: #999;
+  font-size: 24px;
+}
+
+// 刷新按钮
+@-webkit-keyframes gogogo {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.loading-refresh {
+  -webkit-animation: gogogo 2s infinite linear;
+}

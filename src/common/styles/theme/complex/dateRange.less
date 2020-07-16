@@ -1,0 +1,143 @@
+// 时间选框公共样式
+.el-range-editor {
+  height: 32px;
+  background: #2E313E;
+  border: none;
+  border-radius: 2px;
+  .el-range-input, .el-range-separator {
+    font-size: 12px;
+    background: transparent;
+    color: #C1C5CF;
+  }
+  .el-range__icon,.el-range__close-icon,.el-range-separator {
+    height: 30px;
+  }
+}
+// 选中颜色
+.el-range-editor.is-active {
+  border:1px solid #ff6a00;
+  &:hover{
+    border:1px solid #ff6a00;
+  }
+}
+//今天
+.el-date-table td.today span {
+  color: #ff6a00;
+}
+// 时间弹出框公共样式修改
+.el-picker-panel {
+  background: #2E313E;
+  border-radius: 2px;
+  border-color: #2E313E;
+  // 头部输入框设置
+  .el-date-range-picker__time-header,
+  .el-date-picker__time-header {
+    border-color: #2E313E;
+    .el-input__inner {
+      background: #3E4253;
+      border-color: #3E4253;
+      font-size: 12px;
+      color: #C1C5CF;
+    }
+    .el-time-panel__footer {
+      height: 45px;
+    }
+  }
+  .el-picker-panel__body-wrapper,
+  .el-picker-panel__body {
+    .el-picker-panel__content {
+      .el-picker-panel__icon-btn,.el-date-range-picker__header {
+        color: #C1C5CF;
+      }
+      .el-date-table th {
+        border-bottom-color: #5C6171;
+        color: #C1C5CF;
+      }
+      .el-date-table td.in-range div {
+        background-color: #2A424F;
+      }
+      .el-date-table td.end-date span,
+      .el-date-table td.start-date span,
+      .el-date-table td.available.current span {
+        background-color: #FF6A00;
+      }
+      .el-date-table td span {
+        width: 26px;
+        height: 26px;
+        line-height: 26px;
+      }
+      .el-date-table td.available {
+        color: #C1C5CF;
+      }
+      .el-date-table td.next-month, .el-date-table td.prev-month {
+        color: #555865;
+      }
+      .el-date-table td.available.today,
+      .el-date-table td.available.in-range.today
+      .el-date-table td.available.today span {
+        color: #FF6A00;
+      }
+      // 不可选背景色奢姿
+      .el-date-table td.disabled div {
+        background: #3E4253;
+        color: #555865;
+      }
+    }
+    // 小时框样式
+    .el-time-panel {
+      background: #3E4253;
+      border-color: #3E4253;
+      .el-time-spinner__item {
+        color: #C1C5CF;
+      }
+      .el-time-spinner__item:hover {
+        color: #FF6A00;
+        background: transparent;
+      }
+      .el-time-spinner__item.active {
+        color: #FF6A00;
+      }
+      .el-scrollbar__wrap::-webkit-scrollbar {
+        display: none;
+      }
+      .el-time-panel__footer {
+        border-top-width: 0px;
+      }
+      .el-time-panel__content::after, .el-time-panel__content::before {
+        border-top-color:  #5C6171;
+        border-bottom-color:  #5C6171;
+        margin-top: -7px;
+      }
+    }
+    .el-date-range-picker__content.is-left {
+      border-right-color: transparent;
+    }
+  }
+  .el-picker-panel__footer {
+    height: 45px;
+    background: #2E313E;
+    border-radius: 2px;
+    border-color: #2E313E;
+  }
+  .el-time-panel__btn, .el-picker-panel__link-btn {
+    padding: 0 8px;
+    margin: 8px 5px;
+    line-height: 22px;
+    color: #FF6A00;
+    border: #FF6A00 1px solid;
+    border-radius: 2px;
+  }
+  .el-time-panel__btn:hover, .el-picker-panel__link-btn:hover {
+    border-color: #FF6A00;
+    color:#FF6A00;
+  }
+  .el-time-panel__btn.confirm, .el-picker-panel__link-btn.is-plain {
+    background: #FF6A00;
+    color: #fff;
+    border-color: #FF6A00;
+  }
+  .el-time-panel__btn.confirm:hover, .el-picker-panel__link-btn.is-plain:hover {
+    background: #FF6A00;
+    border-color: #FF6A00;
+  }
+}

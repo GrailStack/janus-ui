@@ -1,0 +1,41 @@
+// 多选框样式设置
+.el-checkbox__inner {
+  border: 1px solid #C4C6CF;
+  border-radius: 3px;
+  background: transparent;
+}
+
+.is-focus.el-checkbox__input {
+  .el-checkbox__inner {
+    border: 1px solid #ff6a00;
+  }
+}
+
+// 多选框选中样式设置
+.is-checked.el-checkbox__input, .is-indeterminate.el-checkbox__input {
+  .el-checkbox__inner {
+    background: #ff6a00;
+    border: 1px solid #ff6a00;
+  }
+}
+
+
+
+.el-checkbox ,.el-checkbox.is-checked{
+  .el-checkbox__label {
+    color: #c1c5cf;
+  }
+}
+
+
+
+
+// 单选按钮  单选框颜色设置
+.el-radio__input.is-checked .el-radio__inner {
+  background: #ff6a00;
+  border-color: #ff6a00;
+}
+// 单选按钮  label字体颜色设置
+.el-radio__input.is-checked+.el-radio__label,.el-radio {
+  color: #fff;
+}

@@ -1,0 +1,48 @@
+// reset element ui message box (is not in #app), common changes
+.el-message-box {
+  .el-message-box__headerbtn {
+    cursor: pointer;
+    i {
+      display: inline-block;
+      color: #909399;
+      border-radius: 100%;
+      border: 1px solid #909399;
+      width: 20px;
+      height: 20px;
+      line-height: 19px;
+      text-align: center;
+    }
+  }
+  .el-message-box__headerbtn:hover {
+    i {
+      color: #C9CDD6;
+      border: 1px solid #C9CDD6;
+    }
+  }
+
+  .el-button {
+    font-size: 12px;
+    width: 70px;
+    border-radius: 2px;
+    background: #ff6a00;
+    border: #ff6a00 1px solid;
+    color: #fff;
+    padding: 7px 16px;
+
+    &:hover {
+      background: #e15e00; // 常规按钮hover
+    }
+  }
+}
+
+.el-message-box {
+  background: #373C4F;
+  box-shadow: 6px 9px 17px 0 rgba(22,21,21,0.45);
+  border: 1px solid #373C4F;
+  .el-message-box__content, .el-message-box__title {
+    color: #c1c5cf;
+  }
+}
+
+
+

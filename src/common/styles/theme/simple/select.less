@@ -1,0 +1,58 @@
+
+
+// 下拉列表公共样式 及 下拉框公共样式
+.el-dropdown-menu, .el-select-dropdown ,.el-select-dropdown.is-multiple{
+  border: 1px solid #242731;
+  border-radius: 2px;
+  background: #2E313E;
+  cursor: pointer;
+  .el-dropdown-menu__item,
+  .el-select-dropdown__item {
+    color: #DAD7D7;
+  }
+  .el-dropdown-menu__item:hover,
+  .el-select-dropdown__item:hover,
+  .el-select-dropdown__item.selected,
+  .el-select-dropdown__item.selected.hover {
+    //background-color: #242731;
+    background: #2E313E;
+    color: #ff6a00;
+  }
+  .el-select-dropdown__item.hover {
+    background-color: #424658;
+  }
+  .el-dropdown-menu__item.is-disabled {
+    color: #606266;
+  }
+  .popper__arrow,
+  .popper__arrow::after {
+    border-bottom-color: #2E313E;
+  }
+}
+
+
+
+/*
+// 下拉列表样式
+.el-dropdown.list-select{
+  color: #ff6a00;
+  cursor: pointer;
+  .el-button-group {
+    height: 30px;
+    line-height: 30px;
+    & > .el-button--primary{
+      height: 28px;
+      color: #fff;
+    }
+    & > .el-button--small.el-button--primary{
+      padding: 6px 10px;
+    }
+    & > .el-button--primary:hover{
+    }
+    .el-input__suffix-inner{
+      & > .el-input__icon:before{
+        color: #fff;
+      }
+    }
+  }
+}*/

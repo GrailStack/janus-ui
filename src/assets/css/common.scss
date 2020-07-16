@@ -1,0 +1,63 @@
+// 浮动
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.fix:after {
+  content: '\20';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+// 对齐
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}
+.tc {
+  text-align: center;
+}
+
+// flex布局
+.row-flow {
+  display: flex;
+  flex-flow: row;
+}
+.row-flow .col-f1 {
+  flex: 1;
+}
+.col-flow {
+  display: flex;
+  flex-flow: column;
+}
+.col-flow .row-f1 {
+  flex: 1;
+}
+
+// 单行文字溢出时出现省略号，需设定宽度
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 在恰当的断字点进行换行： */
+.break-word {
+  word-wrap: break-word;
+}
+.break-all {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/* 两端对齐 */
+.text-justify {
+  text-align: justify;
+  text-justify: inter-ideograph;
+}

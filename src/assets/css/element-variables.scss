@@ -1,0 +1,11 @@
+@import './var';
+
+/* 改变主题颜色变量 */
+$--color-primary: $color-primary;
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+@import '~element-ui/packages/theme-chalk/src/index';
+
+.el-button--text {
+  color: $color-blue;
+  font-weight: normal;
+}
